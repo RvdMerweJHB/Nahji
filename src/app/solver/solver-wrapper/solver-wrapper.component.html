@@ -1,4 +1,8 @@
-<p>solver-wrapper works!</p>
-<app-solver-tile>
-    
-</app-solver-tile>
+<div id="tile-surface">
+    <div class="row" *ngFor="let row of Tiles; let i = index">
+        <div *ngFor="let cell of row">
+            <app-solver-tile>
+            </app-solver-tile>
+        </div>
+    </div>
+</div>
