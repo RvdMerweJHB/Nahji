@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TileLocation } from '../../models/tile-location';
 import { Tile } from '../../models/tile';
 
@@ -8,7 +8,8 @@ import { Tile } from '../../models/tile';
   styleUrl: './solver-tile.component.scss'
 })
 export class SolverTileComponent implements OnInit {
-    public Tile: Tile = new Tile();
+    @Input()
+    public Tile: Tile | undefined;
     
     ngOnInit(): void {
     }  

@@ -15,5 +15,5 @@ import { SolverModule } from './solver/solver.module';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Nahji';
+  title = 'Nahji, the Hanji solver';
 }

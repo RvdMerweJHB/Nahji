@@ -1,8 +1,36 @@
-<div id="tile-surface">
-    <div class="row" *ngFor="let row of Tiles; let i = index">
-        <div *ngFor="let cell of row">
-            <app-solver-tile>
-            </app-solver-tile>
+<div id="wrapper">
+    <div id="left-side">
+        <div id="column-clues-hidden">
+            <div class="clue-column" *ngFor="let column of ColumnClues; let i = index">
+                <div class="clue" *ngFor="let clue of column">
+                   {{clue.Value}}
+                </div>
+            </div>
+        </div>
+        <div id="row-clues">
+            <div class="clue-row" *ngFor="let row of RowClues; let i = index">
+                <div class="clue" *ngFor="let clue of row">
+                   {{clue.Value}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="right-side">
+        <div id="column-clues">
+            <div class="clue-column" *ngFor="let column of ColumnClues; let i = index">
+                <div class="clue" *ngFor="let clue of column">
+                   {{clue.Value}}
+                </div>
+            </div>
+        </div>
+        <div id="tile-surface">
+            <div class="row" *ngFor="let row of Tiles; let i = index">
+                <div *ngFor="let cell of row">
+                    <app-solver-tile [Tile]="cell">
+                    </app-solver-tile>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<button (click)="solve()">Solve!</button>

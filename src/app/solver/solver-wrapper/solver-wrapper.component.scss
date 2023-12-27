@@ -1,0 +1,34 @@
+:host {
+    div.row {
+        display: flex;
+    }
+
+    div#column-clues {
+        display: flex;
+        align-items: flex-end;
+    }
+    div#column-clues-hidden {
+        display: flex;
+        align-items: flex-end;
+        visibility: hidden;
+    }
+
+    div.clue {
+        height: 2em;
+        width: 2em;
+        text-align: center;
+    }
+
+    div#main-row {
+        display: flex;
+    }
+
+    div.clue-row {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    div#wrapper {
+        display: flex;
+    }
+}

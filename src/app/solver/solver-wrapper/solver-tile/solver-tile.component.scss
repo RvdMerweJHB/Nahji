@@ -1,11 +1,6 @@
-.tile:empty {
+.tile {
     // border: 1px solid black;
     outline: 1px solid black;
-    height: 1em;
-    width: 1em;
-}
-:host {
-    div.row {
-        display: flex;
-    }
+    height: 2em;
+    width: 2em;
 }
